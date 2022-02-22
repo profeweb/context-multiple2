@@ -34,11 +34,9 @@ class App extends Component {
 
   render() {
 
-      const {signedInUser, theme} = this.props;
-
       return (
         <ThemeContext.Provider value={this.state}>
-          <UserContext.Provider value={signedInUser}>
+          <UserContext.Provider value={this.props.signedInUser}>
             <Layout />
           </UserContext.Provider>
         </ThemeContext.Provider>

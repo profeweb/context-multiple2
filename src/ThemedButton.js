@@ -9,7 +9,7 @@ class ThemedButton extends Component {
           <button className={theme}
             onClick={toggleTheme}
             style={{backgroundColor: theme}}>
-            Toggle Theme
+            Toggle Tema
           </button>
         )}
       </ThemeContext.Consumer>
